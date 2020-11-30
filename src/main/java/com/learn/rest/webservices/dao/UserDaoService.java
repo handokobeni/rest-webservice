@@ -27,6 +27,7 @@ public class UserDaoService {
     public User save(User user) {
         if (user.getId() == null){
             user.setId(++userCount);
+            user.setBirthDate(new Date());
         }
         users.add(user);
 
