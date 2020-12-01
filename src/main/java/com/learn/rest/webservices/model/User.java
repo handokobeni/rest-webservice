@@ -1,10 +1,12 @@
 package com.learn.rest.webservices.model;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
-public class User {
+public class User extends RepresentationModel<User> {
 
     private Integer id;
 
