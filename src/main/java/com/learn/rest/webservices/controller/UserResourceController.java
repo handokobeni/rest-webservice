@@ -31,6 +31,8 @@ public class UserResourceController {
             throw new UserNotFoundException("id " + id + " not found");
         }
 
+        // HATEOAS
+
         return user;
     }
 
