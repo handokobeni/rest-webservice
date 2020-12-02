@@ -36,7 +36,7 @@ public class UserResourceController {
 
         for(final User user : users) {
             // user.add(linkTo(methodOn(UserResourceController.class).retriveUser(user.getId())).withSelfRel());
-            user.add(linkTo(methodOn(UserResourceController.class).retriveUser(user.getId())).withRel("detail"));
+            user.add(linkTo(methodOn(UserResourceController.class).retriveUser(user.getId())).withSelfRel());
         }
 
         // return new CollectionModel<>(users);
